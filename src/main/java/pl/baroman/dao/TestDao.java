@@ -17,7 +17,7 @@ public class TestDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    private void saveTestEntity(){
+    public void saveTestEntity(){
         TestEntity testEntity = new TestEntity(1);
         entityManager.persist(testEntity);
     }
